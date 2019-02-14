@@ -1,9 +1,8 @@
 <template lang="pug">
 div.h-screen
     div
-      Head(v-bind:test = "state" ref="hilang")
-    div(@click="setState")
-       router-view
+      Head(v-bind:test = "state" ref="hilang").sticky
+      router-view(@click="setState")
     Footer
 </template>
 

@@ -3,7 +3,7 @@ div.sticky.pin-t
     //- div untuk hide sidebar
     div(:class="cek")
         //- div untuk menempatkan exit button
-        div.fixed.z-10.justify-center.flex.absolute
+        div.fixed.z-10.justify-center.flex
             span.justify-center.flex.block.p-2.text-grey-darker.font-bold.border-grey-lighter.rounded-full.w-8.h-8.cursor-pointer(class= "hover:border-purple-light hover:bg-red-light" @click="iniFunction()") X
         Sidebar
     div.flex.flex-row.bg-teal-lightest.justify-center.w-screen.h-auto

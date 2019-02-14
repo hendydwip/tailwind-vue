@@ -4,7 +4,7 @@
                 div.px-2.py-2.mb-2.rounded.bg-green-lighter
                     div
                         h1.font-semibold Ini Content
-                    div.border-b-2.w-full.flex.flex-row.mb-2.pb-1
+                    div(style="border-style:double;").border-b-4.w-full.flex.flex-row.mb-2.pb-1.border-black
                         div(class="w-1/2").flex.flex-col.justify-start
                             span Created by&nbsp;
                             span Test
@@ -21,7 +21,7 @@
                 div.px-2.py-2.mb-2.rounded.bg-green-lighter
                     div
                         h1.font-semibold Ini Content
-                    div.border-b-2.w-full.flex.flex-row.mb-2.pb-1
+                    div(style="border-style:double;").border-b-4.w-full.flex.flex-row.mb-2.pb-1.border-black
                         div.justify-start(class="w-1/2").flex.flex-col
                             span Created by&nbsp;
                             span Test
@@ -42,7 +42,7 @@
                     div.px-2.py-2.mb-2.rounded.bg-green-lighter
                         div
                         h1.font-semibold Ini Content
-                        div.border-b-2.w-full.flex.flex-row.mb-2.pb-1
+                        div(style="border-style:double;").border-b-4.w-full.flex.flex-row.mb-2.pb-1.border-black
                             div(class="w-1/2").flex.flex-col.justify-start
                                 span Created by&nbsp;
                                 span Test
@@ -59,7 +59,7 @@
                     div.px-2.py-2.mb-2.rounded.bg-green-lighter
                         div
                         h1.font-semibold Ini Content
-                        div.border-b-2.w-full.flex.flex-row.mb-2.pb-1
+                        div(style="border-style:double;").border-b-4.w-full.flex.flex-row.mb-2.pb-1.border-black
                             div(class="w-1/2").flex.flex-col.justify-start
                                 span Created by&nbsp;
                                 span Test
@@ -78,7 +78,7 @@
                     div.px-2.py-2.mb-2.rounded.bg-green-lighter
                         div
                         h1.font-semibold Ini Content
-                        div.border-b-2.w-full.flex.flex-row.mb-2.pb-1
+                        div(style="border-style:double;").border-b-4.w-full.flex.flex-row.mb-2.pb-1.border-black
                             div(class="w-1/2").flex.flex-col.justify-start
                                 span Created by&nbsp;
                                 span Test
@@ -95,7 +95,7 @@
                     div.px-2.py-2.mb-2.rounded.bg-green-lighter
                         div
                         h1.font-semibold Ini Content
-                        div.border-b-2.w-full.flex.flex-row.mb-2.pb-1
+                        div(style="border-style:double;").border-b-4.w-full.flex.flex-row.mb-2.pb-1.border-black
                             div(class="w-1/2").flex.flex-col.justify-start
                                 span Created by&nbsp;
                                 span Test

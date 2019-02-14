@@ -1,5 +1,5 @@
 <template lang="pug">
-div.bg-teal.shadow.w-64.absolute.p-t
+div.bg-teal.shadow.w-64.fixed.p-t
  div.p-t.overflow-y-auto.max-h-screen.rounded
   ul.list-reset
     li.mt-12
