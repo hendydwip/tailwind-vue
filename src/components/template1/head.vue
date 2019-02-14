@@ -1,7 +1,7 @@
 <template lang="pug">
 div.sticky.pin-t
     //- div untuk hide sidebar
-    div#asd(:class="cek")
+    div(:class="cek")
         //- div untuk menempatkan exit button
         div.fixed.z-10.justify-center.flex.absolute
             span.justify-center.flex.block.p-2.text-grey-darker.font-bold.border-grey-lighter.rounded-full.w-8.h-8.cursor-pointer(class= "hover:border-purple-light hover:bg-red-light" @click="iniFunction()") X
@@ -27,7 +27,7 @@ export default {
   ,
   methods: {
       iniFunction: function(){
-        if(this.cek === 'invisible'){
+        if(this.cek == 'invisible'){
           this.cek = 'visible'
         }else{
           this.cek = 'invisible'
@@ -39,16 +39,5 @@ export default {
 
   }
 }
-
-// var showHide = function() {
-//     var cek = document.getElementById("asd").className
-//     if(cek == "invisible"){
-//         document.getElementById("asd").className = "visible"
-//     }else{
-//         document.getElementById("asd").className = "invisible"
-//     }
-// }
-
-
 </script>
 
