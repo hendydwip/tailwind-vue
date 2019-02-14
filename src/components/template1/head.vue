@@ -1,10 +1,10 @@
 <template lang="pug">
 div.sticky.pin-t
     //- div untuk hide sidebar
-    div#asd(class="invisible")
+    div#asd(:class="cek")
         //- div untuk menempatkan exit button
         div.fixed.z-10.justify-center.flex.absolute
-            span.justify-center.flex.block.p-2.text-grey-darker.font-bold.border-grey-lighter.rounded-full.w-8.h-8.cursor-pointer(class= "hover:border-purple-light hover:bg-red-light" v-on:click="iniFunction()") X
+            span.justify-center.flex.block.p-2.text-grey-darker.font-bold.border-grey-lighter.rounded-full.w-8.h-8.cursor-pointer(class= "hover:border-purple-light hover:bg-red-light" @click="iniFunction()") X
         Sidebar
     div.flex.flex-row.bg-teal-lightest.justify-center.w-screen.h-auto
         span(@click="iniFunction()" class="hover:bg-blue-dark").cursor-pointer.px-4.py-2.m-2.bg-blue.rounded.no-underline.text-white M
@@ -19,23 +19,35 @@ export default {
   components: {
     Sidebar
   },
-
+  data(){
+    return{
+      cek:this.test
+      }
+  }
+  ,
   methods: {
       iniFunction: function(){
-        showHide();
+        if(this.cek === 'invisible'){
+          this.cek = 'visible'
+        }else{
+          this.cek = 'invisible'
+        }
+      },
+      disable: function(){
+        this.cek = 'invisible'
       }
+
   }
 }
 
-var showHide = function() {
-    var cek = document.getElementById("asd").className
-    alert(cek)
-    if(cek == "invisible"){
-        document.getElementById("asd").className = "visible"
-    }else{
-        document.getElementById("asd").className = "invisible"
-    }
-}
+// var showHide = function() {
+//     var cek = document.getElementById("asd").className
+//     if(cek == "invisible"){
+//         document.getElementById("asd").className = "visible"
+//     }else{
+//         document.getElementById("asd").className = "invisible"
+//     }
+// }
 
 
 </script>

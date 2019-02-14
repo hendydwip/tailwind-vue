@@ -1,9 +1,9 @@
 <template lang="pug">
 div.h-screen
     div
-      Head(:test = "state")
-      div(v-on:click="setState()")
-        router-view
+      Head(v-bind:test = "state" ref="hilang")
+    div(@click="setState")
+       router-view
     Footer
 </template>
 
@@ -13,16 +13,12 @@ import Head from './components/template1/head.vue'
 import Body from './components/template1/body.vue'
 import Footer from './components/template1/footer.vue'
 import "./assets/css/main.css"
-var cek1 = "invisible"
-var setS = function() {
-    cek1  = "invisible"
-    return cek1
-}
+//var cek1 = "invisible"
 export default {
   name: 'app',
   data(){
     return{
-    state: cek1
+    state: "invisible"
     }
   },
   components: {
@@ -32,7 +28,7 @@ export default {
   },
   methods: {
       setState: function(){
-        setS()
+        this.$refs.hilang.disable()
       }
   }
 }
