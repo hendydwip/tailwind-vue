@@ -33,86 +33,100 @@ div.bg-teal-lightest.pin-b
                             span.font-light Number
                             span +62123456780
         
-        div.w-full.bg-pink-darkest.pb-5.flex.flex-col(class="md:flex-row")
-            div(class="md:w-1/4").w-full
-                div.px-2.py-2
-                    p.text-xs.text-white.pb-2 Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari kelompok usaha Kompas Gramedia (KG), yang didirikan oleh P.K. Ojong (almarhum) dan Jakob Oetama sejak 28 Juni 1965.
-                    p.text-xs.text-white.pb-2 Mengusung semboyan “Amanat Hati Nurani Rakyat”, Kompas dikenal sebagai sumber informasi tepercaya, akurat, dan mendalam.
+        div.flex.flex-col(class="xl:flex-row")
+            div.w-full.bg-pink-darkest.pb-5.flex.flex-col(class="md:flex-row xl:w-3/4")
+                div(class="md:w-1/4").w-full
+                    div.px-2.py-2
+                        p.text-xs.text-white.pb-2 Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari kelompok usaha Kompas Gramedia (KG), yang didirikan oleh P.K. Ojong (almarhum) dan Jakob Oetama sejak 28 Juni 1965.
+                        p.text-xs.text-white.pb-2 Mengusung semboyan “Amanat Hati Nurani Rakyat”, Kompas dikenal sebagai sumber informasi tepercaya, akurat, dan mendalam.
+                    
+                    div.px-2.py-2.flex.flex-col.w-full.mb-3
+                        div.flex.mb-2
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                                span L
+                            div.py-1.px-2.bg-white.text-xs.rounded
+                                span @cek
+                        div.flex.mb-2
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                                span L
+                            div.py-1.px-2.bg-white.text-xs.rounded
+                                span @cek
+                        div.flex.mb-2
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                                span L
+                            div.py-1.px-2.bg-white.text-xs.rounded
+                                span @cek
+                        div.flex.mb-2
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                                span L
+                            div.py-1.px-2.bg-white.text-xs.rounded
+                                span @cek
                 
-                div.px-2.py-2.flex.flex-col.w-full.mb-3
-                    div.flex.mb-2
-                        div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
-                            span L
-                        div.py-1.px-2.bg-white.text-xs.rounded
-                            span @cek
-                    div.flex.mb-2
-                        div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
-                            span L
-                        div.py-1.px-2.bg-white.text-xs.rounded
-                            span @cek
-                    div.flex.mb-2
-                        div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
-                            span L
-                        div.py-1.px-2.bg-white.text-xs.rounded
-                            span @cek
-                    div.flex.mb-2
-                        div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
-                            span L
-                        div.py-1.px-2.bg-white.text-xs.rounded
-                            span @cek
-            
-            div.flex.flex-col.w-full(class="md:w-1/4")
-                div.px-2.py-2.flex.flex-col.w-full.mb-3
-                    span.text-lg.font-medium.uppercase.text-white.mb-2 Kantor Redaksi
-                    div.flex.flex-row.text-white.mb-3
-                        div.px-2.pt-3
-                            span.w-6.h-6.bg-grey.p-2.rounded-full L
-                        div.text-xs.justify-start
-                            p.mb-1 Gedung Kompas Gramedia
-                            p.mb-1 Jalan Palmerah Selatan 26-28,
-                            p.mb-1 DKI Jakarta, Indonesia
-                            p.mb-1 10270
-                    div.flex.flex-row.text-white.mb-3
-                        div.px-2.pt-3
-                            span.w-6.h-6.bg-grey.p-2.rounded-full L
-                        div.text-xs.justify-start
-                            p.mb-1 +62123 456 789
-                            p.mb-1 +62123 456 789
-                            p.mb-1 +62123 456 789
-                            p.mb-1 +62123 456 789
+                div.flex.flex-col.w-full(class="md:w-1/4")
+                    div.px-2.py-2.flex.flex-col.w-full.mb-3
+                        span.text-lg.font-medium.uppercase.text-white.mb-2 Kantor Redaksi
+                        div.flex.flex-row.text-white.mb-3
+                            div.px-2.pt-3
+                                span.w-6.h-6.bg-grey.p-2.rounded-full L
+                            div.text-xs.justify-start
+                                p.mb-1 Gedung Kompas Gramedia
+                                p.mb-1 Jalan Palmerah Selatan 26-28,
+                                p.mb-1 DKI Jakarta, Indonesia
+                                p.mb-1 10270
+                        div.flex.flex-row.text-white.mb-3
+                            div.px-2.pt-3
+                                span.w-6.h-6.bg-grey.p-2.rounded-full L
+                            div.text-xs.justify-start
+                                p.mb-1 +62123 456 789
+                                p.mb-1 +62123 456 789
+                                p.mb-1 +62123 456 789
+                                p.mb-1 +62123 456 789
 
-                div.px-2.py-2.flex.flex-col.w-full.mb-3
-                    span.text-lg.font-medium.uppercase.text-white.mb-2 Kantor Iklan
-                    div.flex.flex-row.text-white.mb-3
-                        div.px-2.pt-3
-                            span.w-6.h-6.bg-grey.p-2.rounded-full L
-                        div.text-xs.justify-start
-                            p.mb-1 Gedung Kompas Gramedia
-                            p.mb-1 Jalan Palmerah Selatan 26-28,
-                            p.mb-1 DKI Jakarta, Indonesia
-                            p.mb-1 10270
-                    div.flex.flex-row.text-white.mb-3
-                        div.px-2.pt-3
-                            span.w-6.h-6.bg-grey.p-2.rounded-full L
-                        div.text-xs.justify-start
-                            p.mb-1 +62123 456 789
+                    div.px-2.py-2.flex.flex-col.w-full.mb-3
+                        span.text-lg.font-medium.uppercase.text-white.mb-2 Kantor Iklan
+                        div.flex.flex-row.text-white.mb-3
+                            div.px-2.pt-3
+                                span.w-6.h-6.bg-grey.p-2.rounded-full L
+                            div.text-xs.justify-start
+                                p.mb-1 Gedung Kompas Gramedia
+                                p.mb-1 Jalan Palmerah Selatan 26-28,
+                                p.mb-1 DKI Jakarta, Indonesia
+                                p.mb-1 10270
+                        div.flex.flex-row.text-white.mb-3
+                            div.px-2.pt-3
+                                span.w-6.h-6.bg-grey.p-2.rounded-full L
+                            div.text-xs.justify-start
+                                p.mb-1 +62123 456 789
 
-            div.px-2.py-2.flex.flex-row.w-full(class="md:w-1/2")
-                div.flex.flex-col(class="w-1/2")
-                    span.text-lg.font-medium.uppercase.text-white.mb-2 Produk
-                    div.mt-2.flex.flex-col
-                        span.text-xs.text-white.mb-2 ePaper
-                        span.text-xs.text-white.mb-2 Kompas.id
-                        span.text-xs.text-white.mb-2 Kompas Data
-                        span.text-xs.text-white.mb-2 Kompas Karier
-                div.flex.flex-col(class="w-1/2")
-                    span.text-lg.font-medium.uppercase.text-white.mb-2 Iklan
-                    div.mt-2.flex.flex-col
-                        span.text-xs.text-white.mb-2 Klasika
-                        span.text-xs.text-white.mb-2 Tarif
-                        span.text-xs.text-white.mb-2 Advertorial
+                div.px-2.py-2.flex.flex-row.w-full(class="md:w-1/2")
+                    div.flex.flex-col(class="w-1/2")
+                        span.text-lg.font-medium.uppercase.text-white.mb-2 Produk
+                        div.mt-2.flex.flex-col
+                            span.text-xs.text-white.mb-2 ePaper
+                            span.text-xs.text-white.mb-2 Kompas.id
+                            span.text-xs.text-white.mb-2 Kompas Data
+                            span.text-xs.text-white.mb-2 Kompas Karier
+                    div.flex.flex-col(class="w-1/2")
+                        span.text-lg.font-medium.uppercase.text-white.mb-2 Iklan
+                        div.mt-2.flex.flex-col
+                            span.text-xs.text-white.mb-2 Klasika
+                            span.text-xs.text-white.mb-2 Tarif
+                            span.text-xs.text-white.mb-2 Advertorial
 
-        div.bg-blue.h-6
+            div.bg-blue.pb-5.flex.flex-col.px-2.py-2(class="xl:w-1/4")
+                div.flex.flex-col
+                    div.flex.flex-col.w-full
+                        span.text-lg.font-medium.uppercase.text-white.mb-2 tentang
+                        div.mt-2.flex.flex-col
+                            span.text-xs.text-white.mb-2 Profil Perusahaan
+                            span.text-xs.text-white.mb-2 Sejarah
+                    div.flex.flex-col.w-full
+                        span.text-lg.font-medium.uppercase.text-white.mb-2 lainnya
+                        div.mt-2.flex.flex-col
+                            span.text-xs.text-white.mb-2 Peta Situs
+                            span.text-xs.text-white.mb-2 Newsletter
+                div.w-full.h-auto.px-2.py-2
+                    img(src="https://kompas.id/wp-content/themes/mumed_kompas_dot_id_2016/assets/img/logos/kompas-footer-logo.svg")
         //- div.px-4.py-2.m-2.bg-blue.rounded.no-underline.text-white.w-auto.flex-col.flex.justify-start
         //-     span.font-bold Adress
         //-     span.text-xs 5 Main Street WESTERN CENTRAL LONDON WC37 5EK

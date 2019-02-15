@@ -4,7 +4,6 @@ div.sticky.pin-t
     div
         //- div untuk menempatkan exit button
         div.fixed.z-10.justify-center.flex
-            span.justify-center.flex.block.p-2.text-grey-darker.font-bold.border-grey-lighter.rounded-full.w-8.h-8.cursor-pointer(class= "hover:border-purple-light hover:bg-red-light" @click="iniFunction()") X
         Sidebar(v-if='sidebar_is_shown')
     div.flex.flex-row.bg-teal-lightest.justify-center.w-screen.h-auto
         span(@click.stop="sidebar_is_shown = !sidebar_is_shown" class="hover:bg-blue-dark").cursor-pointer.px-4.py-2.m-2.bg-blue.rounded.no-underline.text-white M
