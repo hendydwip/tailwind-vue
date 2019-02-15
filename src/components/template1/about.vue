@@ -3,7 +3,7 @@ div(class="lg:w-4/5 lg:text-blue md:w-3/4 md:text-blue sm:w-full sm:text-red").p
     div.flex-col.w-full.text-white.mx-auto.justify-start.flex
         div.rounded.flex.w-full.mx-auto.bg-blue.px-2.py-2.my-2.flex-wrap
             div.w-full
-                h.font-semibold About1
+                h1.font-semibold About1
                 div.border-b-2.w-full.mb-2
                     span Created on &nbsp;
                     span 22/22/2019
@@ -12,7 +12,7 @@ div(class="lg:w-4/5 lg:text-blue md:w-3/4 md:text-blue sm:w-full sm:text-red").p
 
         div.rounded.flex.w-full.mx-auto.bg-blue.px-2.py-2.my-2.flex-wrap
             div.w-full
-                h.font-semibold About2
+                h1.font-semibold About2
                 div.border-b-2.w-full.mb-2
                     span Created on &nbsp;
                     span 22/22/2020

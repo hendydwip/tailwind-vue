@@ -1,8 +1,8 @@
 <template lang="pug">
 div.h-screen
     div
-      Head(v-bind:test = "state" ref="hilang").sticky
-      router-view(@click="setState")
+      Head.sticky
+      router-view
     Footer
 </template>
 
@@ -25,11 +25,6 @@ export default {
     Body,
     Footer
   },
-  methods: {
-      setState: function(){
-        this.$refs.hilang.disable()
-      }
-  }
 }
 
 

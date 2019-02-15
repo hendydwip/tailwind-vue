@@ -1,5 +1,5 @@
 <template lang="pug">
-div.bg-teal.shadow.w-64.fixed.p-t
+div#test.bg-teal.shadow.w-64.fixed.pin-t
  div.p-t.overflow-y-auto.max-h-screen.rounded
   ul.list-reset
     li.mt-12
@@ -18,3 +18,9 @@ div.bg-teal.shadow.w-64.fixed.p-t
     li
       router-link(to="/about" class="hover:border-purple-light hover:bg-grey-lighter").block.p-4.text-grey-darker.font-bold.border-grey-lighter.no-underline About
 </template>
+
+<script>
+export default {
+
+}
+</script>
