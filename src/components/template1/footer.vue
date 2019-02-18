@@ -1,6 +1,6 @@
 <template lang="pug">
-div.bg-teal-lightest.pin-b
-    div(class="sm:flex-col sm:w-full").flex.flex-col.mb-0.max-w-xl.mx-auto
+div.pin-b.relative.border-t-2
+    div(class="sm:flex-col sm:w-full lg:w-2/3").flex.flex-col.mb-0.mx-auto
         div(class="md:flex-row lg:flex-row").w-full.h-auto.flex.py-6.px-3.flex-col
             div(class="md:w-1/4 sm:w-full sm:justify-center").flex.justify-start
                 span.font-bold Layanan&nbsp;
@@ -32,9 +32,14 @@ div.bg-teal-lightest.pin-b
                         div.flex.flex-col
                             span.font-light Number
                             span +62123456780
-        
-        div.flex.flex-col(class="xl:flex-row")
-            div.w-full.bg-pink-darkest.pb-5.flex.flex-col(class="md:flex-row xl:w-3/4")
+
+    
+    div.relative.flex.flex-col.mb-0.mx-auto    
+        div.z-0.absolute.w-full.flex.flex-row.h-full
+            div(class="w-3/4").bg-grey-dark
+            div(class="w-1/4").bg-blue
+        div.flex.flex-col(class="xl:flex-row sm:w-full lg:w-2/3").relative.z-10.mx-auto 
+            div.w-full.bg-grey-dark.pb-5.flex.flex-col(class="md:flex-row xl:w-3/4")
                 div(class="md:w-1/4").w-full
                     div.px-2.py-2
                         p.text-xs.text-white.pb-2 Harian Kompas adalah surat kabar Indonesia yang berkantor pusat di Jakarta. Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari kelompok usaha Kompas Gramedia (KG), yang didirikan oleh P.K. Ojong (almarhum) dan Jakob Oetama sejak 28 Juni 1965.
@@ -42,26 +47,26 @@ div.bg-teal-lightest.pin-b
                     
                     div.px-2.py-2.flex.flex-col.w-full.mb-3
                         div.flex.mb-2
-                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-grey-darker.rounded
                                 span L
-                            div.py-1.px-2.bg-white.text-xs.rounded
+                            div.py-1.px-2.bg-grey-darker.text-xs.rounded
                                 span @cek
                         div.flex.mb-2
-                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-grey-darker.rounded
                                 span L
-                            div.py-1.px-2.bg-white.text-xs.rounded
+                            div.py-1.px-2.bg-grey-darker.text-xs.rounded
                                 span @cek
                         div.flex.mb-2
-                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-grey-darker.rounded
                                 span L
-                            div.py-1.px-2.bg-white.text-xs.rounded
+                            div.py-1.px-2.bg-grey-darker.text-xs.rounded
                                 span @cek
                         div.flex.mb-2
-                            div.w-6.h-6.px-2.py-1.mr-1.bg-white.rounded
+                            div.w-6.h-6.px-2.py-1.mr-1.bg-grey-darker.rounded
                                 span L
-                            div.py-1.px-2.bg-white.text-xs.rounded
+                            div.py-1.px-2.bg-grey-darker.text-xs.rounded
                                 span @cek
-                
+            
                 div.flex.flex-col.w-full(class="md:w-1/4")
                     div.px-2.py-2.flex.flex-col.w-full.mb-3
                         span.text-lg.font-medium.uppercase.text-white.mb-2 Kantor Redaksi
@@ -127,6 +132,17 @@ div.bg-teal-lightest.pin-b
                             span.text-xs.text-white.mb-2 Newsletter
                 div.w-full.h-auto.px-2.py-2
                     img(src="https://kompas.id/wp-content/themes/mumed_kompas_dot_id_2016/assets/img/logos/kompas-footer-logo.svg")
+
+    div.bg-black.h-full.w-full.flex.justify-center.flex-wrap
+        div.text-white.text-xs.py-4.px-2
+            span &copy; 2019 &nbsp
+            span &copy; PT Kompas Media Nusantara Utama |&nbsp
+            span Tanya Jawab | &nbsp
+            span Hubungi Kami | &nbsp
+            span Sidik Gangguan | &nbsp
+            span Pedoman Media Siber | &nbsp
+            span Syarat & Ketentuan
+        div.h-3.w-full.mt-5
         //- div.px-4.py-2.m-2.bg-blue.rounded.no-underline.text-white.w-auto.flex-col.flex.justify-start
         //-     span.font-bold Adress
         //-     span.text-xs 5 Main Street WESTERN CENTRAL LONDON WC37 5EK

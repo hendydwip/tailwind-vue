@@ -1,5 +1,5 @@
 <template lang="pug">
-    div(class="lg:flex-row md:flex-col sm:flex-col lg:w-1/2").flex-col.h-auto.flex.mx-auto
+    div(class="lg:flex-row md:flex-col sm:flex-col lg:w-2/3").flex-col.h-auto.flex.mx-auto
             div(class="lg:w-4/5 lg:text-blue md:w-3/4 md:text-blue sm:w-full sm:text-red").text-teal.flex-wrap.px-2.py-2.mx-auto.flex
                 div.px-2.py-2.mb-2.rounded.bg-green-lighter
                     div

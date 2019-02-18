@@ -1,5 +1,5 @@
 <template lang="pug">
-div.sticky.pin-t
+div.sticky.pin-t.z-40
     //- div untuk hide sidebar
     div
         //- div untuk menempatkan exit button

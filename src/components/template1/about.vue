@@ -22,18 +22,29 @@ div(class="lg:w-4/5 lg:text-blue md:w-3/4 md:text-blue sm:w-full sm:text-red").p
         div.rounded.flex.w-full.mx-auto.bg-blue.px-2.py-2.my-2.flex-col
             div.flex.w-full.justify-center
                 div.justify-center.flex
-                    img(src="https://via.placeholder.com/600x400")
+                    img(:src="image+target")
             div.justify-center.w-full.h-64.flex.flex-row.mt-2
                 div.overflow-x-auto.flex
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
-                    img(src="https://via.placeholder.com/200x200").m-2
+                    img(@click.stop="target = 'Image1'" src="https://via.placeholder.com/200x200?text=Image1" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image2'" src="https://via.placeholder.com/200x200?text=Image2" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image3'" src="https://via.placeholder.com/200x200?text=Image3" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image4'" src="https://via.placeholder.com/200x200?text=Image4" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image5'" src="https://via.placeholder.com/200x200?text=Image5" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image6'" src="https://via.placeholder.com/200x200?text=Image6" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image7'" src="https://via.placeholder.com/200x200?text=Image7" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image8'" src="https://via.placeholder.com/200x200?text=Image8" ).m-2.cursor-pointer
+                    img(@click.stop="target = 'Image9'" src="https://via.placeholder.com/200x200?text=Image9" ).m-2.cursor-pointer
 
                 
 </template>
+
+<script>
+export default {
+    data(){
+    return{
+      image: 'https://via.placeholder.com/600x400?text=',
+      target: "Image1"
+      }
+  }
+}
+</script>
