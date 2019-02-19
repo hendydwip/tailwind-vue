@@ -5,7 +5,11 @@ div.h-screen
       router-view
       Footer
       div.w-full.h-auto.fixed.pin-b.z-30.mx-auto.text-white.text-xs.h-3
-        div(class="xl:w-2/3 w-4/5").py-3.px-2.bg-blue-dark.mx-auto.justify-center.flex Text Promo this Month
+        div(class="xl:w-2/3 w-4/5" @click.stop="is_shown_promo = !is_shown").py-3.px-2.bg-blue-dark.mx-auto.justify-center.flex.cursor-pointer Text Promo this Month
+      //-viewer image
+      div.z-40.fixed.pin.h-full.w-full(v-if='is_shown_promo').justify-center.flex.bg-smoke-darker
+        router-link(to="/about").m-auto.flex.h-auto.w-auto.cursor-pointer
+          img(src="https://via.placeholder.com/600x800?text=Promo About")
 </template>
 
 <script>
@@ -19,7 +23,7 @@ export default {
   name: 'app',
   data(){
     return{
-    state: "invisible"
+    is_shown_promo: false
     }
   },
   components: {
@@ -27,6 +31,13 @@ export default {
     Body,
     Footer
   },
+  mounted(){
+    let _self = this
+    document.body.addEventListener('click', function(){
+      if(_self.is_shown_promo == true)
+        _self.is_shown_promo = false
+    })
+  }
 }
 
 

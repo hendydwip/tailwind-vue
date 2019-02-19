@@ -9,7 +9,7 @@ div(class="flex lg:w-4/5 lg:text-blue md:w-3/4 md:text-blue sm:w-full sm:text-re
                 span Test
             div(class="w-1/2").justify-end.flex
                 div.flex-col.flex
-                    span.pb-1.text-sm 99 / 99 / 1999
+                    span.pb-1.text-sm {{ new Date().getDate() }}/{{ new Date().getMonth()+1 }}/{{ new Date().getFullYear() }}
                     div.flex.justify-end
                         img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png").w-5.h-5.rounded-full.mx-1
                         img(src="https://pbs.twimg.com/profile_images/1092100446586630146/3uFY0wpD_400x400.jpg").w-5.h-5.rounded-full.mx-1
