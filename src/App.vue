@@ -4,7 +4,7 @@ div.h-screen
       Head
       router-view
       Footer
-      div.w-full.h-auto.fixed.pin-b.z-40.mx-auto.text-white.text-xs.h-3
+      div.w-full.h-auto.fixed.pin-b.z-30.mx-auto.text-white.text-xs.h-3
         div(class="xl:w-2/3 w-4/5").py-3.px-2.bg-blue-dark.mx-auto.justify-center.flex Text Promo this Month
 </template>
 

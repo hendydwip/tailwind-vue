@@ -127,6 +127,8 @@ let colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
+
+  'smoke-darker': 'rgba(0, 0, 0, 0.75)',
 }
 
 module.exports = {
